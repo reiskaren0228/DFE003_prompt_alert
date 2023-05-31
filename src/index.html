@@ -6,8 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <header></header>
 
-  <body></body>
-  <script src="./main.js"></script>
+  <header>
+    <h1>👾 Desafio do Prompt 👾</h1>
+  </header>
+
+  <section id="section__formulario__par_impar">
+
+      <div id="title__par__impar">
+        <h2>Desafio Par ou Ímpar</h2>
+      </div>
+
+      <form action="" id="form__par__impar">
+        <fieldset id="par__impar">
+          <label for="" class="label__num_digitado">Digite um número:</label>
+          <input id="input__num__digitado" type="number" placeholder="Digite um número inteiro" ></input>
+        </fieldset>
+
+        <button id="btn__resultado" onclick="resultado()" type="submit">Resultado</button>
+
+        <span id="resultado_par_impar"></span>
+      </form>
+
+  </section>
+  
+  <section id="section__formulario__jantar">
+
+      <div id="title__valor__jantar">
+        <h2>Calculadora de Eventos</h2>
+      </div>
+
+      <form action="" id="form__jantar">
+        <fieldset id="valor__jantar">
+          <label for="" class="label__valor_jantar">Informe o valor do jantar:</label>
+          <input id = "input__valor_jantar" type="number" placeholder="R$ 0,00"></input>
+        </fieldset>
+
+        <fieldset id="taxa__serviço">
+          <label for="" class="label__taxa">Digite a taxa de serviço do garçon em %:</label>
+          <input id = "input__num__taxa" type="number" placeholder="10%"></input>
+        </fieldset>
+
+        <button id="btn__jantar" onclick="valor__evento()" type="submit">Calcular</button>
+
+        <span id="resultado__jantar"></span>
+      </form>
+
+  </section>
+
+  <section id="section__formulario__evento">
+
+      <div id="title__valor__evento">
+        <h2>Pagamento Pizzaria</h2>
+      </div>
+
+      <form action="" id="form__pizzaria">
+        <fieldset id="valor__consumo">
+          <label for="" class="label__valor_jantar">Informe o valor total da conta do consumo na pizzaria:</label>
+          <input id = "input__valor_consumo" type="number" placeholder="R$ 0,00"></input>
+        </fieldset>
+
+        <fieldset id="qtd_pessoas">
+          <label for="" class="label__qtd_pessoas">Informe a quantidade de pessoa que irão dividir a conta:</label>
+          <input id = "qtd__num__pessoas" type="number" placeholder="2 pessoas"></input>
+        </fieldset>
+
+        <button id="btn__pizzaria" onclick="valor__pizzaria()" type="submit">Conta</button>
+
+        <span id="valorTotal"> </span>
+
+      </form>
+
+    </section>
+  
+  </body>
+    <script src="./main.js"></script>
 </html>
